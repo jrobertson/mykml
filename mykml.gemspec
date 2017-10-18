@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'mykml'
-  s.version = '0.1.0'
+  s.version = '0.1.1'
   s.summary = 'Generates KML from a log file.'
   s.authors = ['James Robertson']
   s.files = Dir['lib/mykml.rb', 'xsl/mykml.xsl']
