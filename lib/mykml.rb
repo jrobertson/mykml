@@ -26,7 +26,7 @@ class MyKML
 
     doc   = Nokogiri::XML(@dx.to_xml(pretty: true))
 
-    xslfile = File.read(File.join(File.dirnam(__FILE__), '..', 
+    xslfile = File.read(File.join(File.dirname(__FILE__), '..', 
                           'xslt','mykml.xsl'))
     xslt  = Nokogiri::XSLT(xslfile)
     xslt.transform(doc)
